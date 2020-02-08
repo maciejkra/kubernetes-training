@@ -1,0 +1,7 @@
+FROM gradle:4.10.2-jdk8 as builder
+#
+#
+
+FROM openjdk:11-jre-slim
+# COPY --from=nginx:latest /etc/nginx/nginx.conf /nginx.conf
+ENV MULTISTAGE="yes!"
