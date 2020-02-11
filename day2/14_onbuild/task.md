@@ -4,7 +4,7 @@
 
 # Build image based on previous
 
-`docker build -t python-redis .`
+`docker build -t python-api:redis .`
 
 # Connect python with redis
 
