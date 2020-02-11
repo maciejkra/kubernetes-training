@@ -1,6 +1,8 @@
 # List networks
 
-`<??> network <?>
+```
+<??> network <?>
+```
 
 # Use network
 
