@@ -4,7 +4,7 @@ kubectl get svc -n ingress-internal
 ```
 check endpoint port 8080
 
-# Modyfi ingress files and set your hostname
+# Modify ingress files and set your hostname
 
 ```sh
 kubectl create -f  traefik.ingress.yaml
