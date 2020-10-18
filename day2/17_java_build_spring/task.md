@@ -1,6 +1,7 @@
 # Build & run java spring
 
 `docker image build -t full-spring .`
+
 `docker container run --rm -p 8080:8080 full-spring`
 
 - list files in first image
