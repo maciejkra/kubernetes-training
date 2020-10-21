@@ -1,7 +1,7 @@
 # Create deployment
 
 ```sh
-kubectl create -f .\deployment.yaml
+kubectl create -f deployment.yaml
 kubectl get rs
 kubectl get pods
 ```
