@@ -11,16 +11,10 @@
 very-secret-password
 ```
 
-## Copy all files into image inside Dockerfile
-
-```
-COPY . /usr
-```
-
 Rebuild image and verify password is there
 
 ```
-docker container run --rm <?> cat /password
+docker container run --rm <?> cat /usr/html/password
 ```
 
 ## Remove other files copied using dockerignore
