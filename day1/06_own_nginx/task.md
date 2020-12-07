@@ -33,6 +33,6 @@ Create `.dockerignore`
 ```
 
 1. Rebuild image
-2. Password is no longe there
+2. Password is no longer there
 
 ## Run container and verify new index.html page
