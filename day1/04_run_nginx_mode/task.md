@@ -21,7 +21,7 @@ One of env variable should be `user=<your name>`
 
 ## Inspect container & find its ip
 
-`-f "{{.NetworkSettings.IPAddress}}"`
+`docker inspect <?> -f "{{.NetworkSettings.IPAddress}}"`
 
 Execute proper curl command against container
 

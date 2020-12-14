@@ -8,7 +8,7 @@
 
 1. Build image from `01_volume_ls`
 2. Run container 
-3. `touch /tmp/something`
+3. `touch /tmp/something` on your hard drive
 3. Run container with `-v /tmp:/data <image_name> /data`
 
 File something should be displayed
