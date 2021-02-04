@@ -11,7 +11,7 @@
 `docker image build -t base-java .`
 
 
-- Use `cp` command for container to copy jar using stage
+- Use `COPY` command for container to copy jar using stage
 - Use copied file in second stage to build smaller image
 
 - Check difference in image sizes
