@@ -1,40 +1,15 @@
 # Compose task
 
-in `01_build` run `docker-compose up -d`
 
-verify running service
+- run both redis
+- redis container should have name `redis` or `REDIS_HOST` should be set in python
+- don't expose port on redis
 
-`docker-compose ps`
 
-# Create compose file for nginx
-
-- create index.htm and mount with `volumes` in yaml to `/usr/share/nginx/html/`
-- use image `nginx:1.15.5`
-- add service with `krajewskim/python-api:redis` image and expose on port `5002`
-- run single service `<?> run <?>`
-- scale service `<?> -d --scale <service>=<number>`
-- add `depends_on:` to python to depend on redis
-- remove containers with compose `rm`
-- `down` stops & removes all stuff (see help)
-
-# check containers 
-
-see exited containers
-
-```sh
-docker container ls -a --filter "status=exited"
+Check network
 ```
-
-enter into service
-
-```sh
-docker-compose exec web /bin/bash
+curl 127.0.0.1:5002/healthz
+curl -XPOST 127.0.0.1:5002/api/v1/info
+curl -XPOST 127.0.0.1:5002/api/v1/info
+curl 127.0.0.1:5002/api/v1/info
 ```
-
-# Load balancing
-
-- remove port forward
-- scale web
-- execute curl from python to web `docker-compose exec pyredis curl web`
-- see logs for web from docker-compose
-- see logs directly from docker

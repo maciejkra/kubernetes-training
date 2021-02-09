@@ -1,3 +1,0 @@
-# Prune images and containers
-
-
