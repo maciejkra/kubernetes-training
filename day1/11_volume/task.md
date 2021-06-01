@@ -17,7 +17,7 @@ File something should be displayed
 
 1. Create volume `<??> volume my-volume`
 2. List new volume
-3. Run 2 containers with bash running in CMD (`alpine` for example)
+3. Run 2 containers with sh running in CMD (`alpine` for example)
 
 First with `-v my-volume:/data:ro`
 Second with `-v my-volume:/data`
