@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:2-slim
 
 RUN mkdir -p /usr/src/app
 ONBUILD COPY ./src /usr/src/app
