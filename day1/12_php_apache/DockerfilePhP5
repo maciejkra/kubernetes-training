@@ -10,6 +10,6 @@ RUN apk add --update apache2 php${PHPVERSION}-apache2 php${PHPVERSION} && \
 
 EXPOSE 80/tcp
 VOLUME /var/www/localhost/htdocs/
-
+COPY ./www/ /var/www/localhost/htdocs/ 
 ENTRYPOINT ["httpd"]
 CMD ["-D", "FOREGROUND"]
