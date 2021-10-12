@@ -1,11 +1,9 @@
 # Build my-own image
 
 
-## Write own html page and provide to nginx image
-
-## Run nginx and access it by browser
-
-## Create password file inside my-own folder
+* Write own html page and provide to nginx image
+* Run nginx and access it by browser
+* Create password file inside my-own folder
 
 ```password
 very-secret-password
